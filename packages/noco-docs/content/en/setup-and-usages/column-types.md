@@ -34,6 +34,7 @@ menuTitle: 'Column Types'
 | [DateTime](#datetime)| Date & Time selector |
 | [QR Code](#qr-code)|  QR Code visualization of another referenced column |
 | [Barcode](#barcode)|  Barcode visualization of another referenced column |
+| [User](#user) | Link one or more nocodb users |
 | [Geometry](#geometry)|  Geometry column |
 | [GeoData](#geodata)|  GeoData column |
 | [Json](#json)|  Json column |
@@ -286,6 +287,10 @@ Encodes the value of a reference column as Barcode. Supported barcode formats: C
 * Email
 
 Since it's a virtual column, the cell content (Barcode) cannot be changed directly.
+
+### User
+
+Allows you to link a user with access to the current Project and View to the row. Behind the scenes it works similarly to [LinkToAnotherRecord](./link-to-another-record) but always has a One to Many relationship with the project users table.
 
 ### Rollup
 

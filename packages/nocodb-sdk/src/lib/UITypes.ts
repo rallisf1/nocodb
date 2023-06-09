@@ -38,6 +38,7 @@ enum UITypes {
   Barcode = 'Barcode',
   QrCode = 'QrCode',
   Button = 'Button',
+  User = 'User',
 }
 
 export const numericUITypes = [
@@ -77,6 +78,7 @@ export function isVirtualCol(
     UITypes.Formula,
     UITypes.QrCode,
     UITypes.Barcode,
+    UITypes.User,
     UITypes.Rollup,
     UITypes.Lookup,
     // UITypes.Count,
